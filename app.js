@@ -34,7 +34,7 @@ headDropdown.addEventListener('change', (e) => {
 middleDropdown.addEventListener('change', (e) => {
     // get the value of the middle dropdown
     const value = e.target.value;
-    console.log(value);
+    // console.log(value);
     // increment the middle change count state
     middleCount++;
     // update the dom for the middle (NOTE: use style.backgroundImage on the middleEl div instead of trying to set the .src -- it's NOT an img tag!)
@@ -46,7 +46,7 @@ middleDropdown.addEventListener('change', (e) => {
 bottomDropdown.addEventListener('change', (e) => {
     // get the value of the bottom dropdown
     const value = e.target.value;
-    console.log(value);
+    // console.log(value);
     // increment the bottom change count state
     bottomCount++;
     // update the dom for the bottom (NOTE use style.backgroundImage on the bottomEl div instead of trying to set the .src -- it's NOT an img tag!)
@@ -66,7 +66,7 @@ catchphraseButton.addEventListener('click', () => {
     displayCatchphrases();
 });
 
-function displayStats(value) {
+function displayStats() {
     // change the text contentof the reportEl to tell the user how many times they've changed each piece of the state
     const statsString = makeStatsString(headCount, middleCount, bottomCount);
     reportEl.textContent = statsString; // call this function with the correct arguments
@@ -83,6 +83,6 @@ function displayCatchphrases() {
         p.textContent = catchphrase;
         // and append that HTML element to the cleared-out DOM
         catchphrasesEl.append(p);
-        //forgot got switch branches at the start 
+        //forgot got switch branches at the start
     }
 }
