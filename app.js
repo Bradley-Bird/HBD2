@@ -83,5 +83,6 @@ function displayCatchphrases() {
         p.textContent = catchphrase;
         // and append that HTML element to the cleared-out DOM
         catchphrasesEl.append(p);
+        //forgot got switch branches at the start 
     }
 }
